@@ -5,44 +5,172 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>30 APIs Gratuitas para Projetos</title>
   <style>
+    header {
+        width: 100%;
+        max-width: 1400px;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #2d2d2d;
+    }
+
+    .header-left h1 {
+        font-size: 1.5rem;
+        color: #58a6ff;
+        margin: 0;
+    }
+
+    nav a {
+        margin-right: 1rem;
+        font-size: 0.95rem;
+        color: #c9d1d9;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #58a6ff;
+        text-decoration: underline;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .github-link {
+        color: #58a6ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .github-link:hover {
+        text-decoration: underline;
+    }
+
+    #toggle-theme {
+        background: none;
+        border: 1px solid #58a6ff;
+        border-radius: 5px;
+        color: #58a6ff;
+        padding: 0.4rem 0.6rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s;
+    }
+
+    #toggle-theme:hover {
+    background: #58a6ff20;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: #8b949e;
+        margin: 0;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f8f9fa;
-      color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 2rem 1rem;
+        background: linear-gradient(135deg, #0d1117, #161b22);
+        color: #f0f0f0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    body.light-theme {
+        background: #f5f5f5;
+        color: #111;
+    }
+
+    body.light-theme .api-card {
+        background: rgba(255, 255, 255, 0.8);
+        border-left-color: #0069d9;
+        color: #111;
+    }
+
+    body.light-theme a {
+        color: #0069d9;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1000px;
+    }
+
     h1 {
-      color: #0069d9;
+      color: #58a6ff;
       margin-bottom: 1rem;
     }
+
     .api-card {
-      background-color: #fff;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-left: 5px solid #0069d9;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      background: rgba(21, 27, 35, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(90, 148, 255, 0.2);
+      border-left: 5px solid #58a6ff;
+      border-radius: 10px;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
+
+    .api-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
     .category {
       font-weight: bold;
-      color: #555;
-      margin-bottom: 0.3rem;
+      color: #8b949e;
+      margin-bottom: 0.4rem;
     }
+
     a {
-      color: #0069d9;
+      color: #58a6ff;
       text-decoration: none;
       word-break: break-word;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .note {
       font-style: italic;
       color: #888;
       margin-top: 0.5rem;
     }
   </style>
+
 </head>
 <body>
+<header>
+  <div class="header-left">
+    <nav>
+      <a href="#clima">Clima</a>
+      <a href="#dados-publicos">Dados Públicos</a>
+      <a href="#ia">IA</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#esportes">Esportes</a>
+    </nav>
+  </div>
+
+  <div class="header-right">
+    <a href="https://github.com/seu-usuario/seu-repo" target="_blank" class="github-link">GitHub</a>
+    <button id="toggle-theme">🌗</button>
+  </div>
+</header>
+
+
+<main>
   <h1>🌐 30 APIs Gratuitas (com Limitações) para Usar em Projetos</h1>
   <p>Use essas APIs para praticar, testar e criar projetos incríveis! Muitas oferecem planos gratuitos com limitações; confira no site oficial antes de usar.</p>
 
@@ -285,6 +413,15 @@
     <p><strong>Plano Gratuito:</strong> Sim, aberto</p>
     <p><strong>Descrição:</strong> Imagens e dados de cachorros.</p>
   </div>
-
+</main>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('toggle-theme');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+    });
+  });
+</script>
+
 </html>
