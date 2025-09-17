@@ -8,81 +8,114 @@
     header {
         width: 100%;
         max-width: 1400px;
-        margin-bottom: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #2d2d2d;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #2d2d2d;
     }
 
     .header-left h1 {
-        font-size: 1.5rem;
-        color: #58a6ff;
-        margin: 0;
+      font-size: 1.5rem;
+      color: #58a6ff;
+      margin: 0;
     }
 
     nav a {
-        margin-right: 1rem;
-        font-size: 0.95rem;
-        color: #c9d1d9;
-        text-decoration: none;
+      margin-right: 1rem;
+      font-size: 0.95rem;
+      color: #c9d1d9;
+      text-decoration: none;
     }
 
     nav a:hover {
-        color: #58a6ff;
-        text-decoration: underline;
+      color: #58a6ff;
+      text-decoration: underline;
     }
 
     .header-right {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+      display: flex;
+      {% comment %} align-items: center; {% endcomment %}
+      gap: 1rem;
     }
 
     .github-link {
-        color: #58a6ff;
-        text-decoration: none;
-        font-weight: bold;
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .github-link:hover {
-        text-decoration: underline;
+      text-decoration: underline;
     }
 
     #toggle-theme {
-        background: none;
-        border: 1px solid #58a6ff;
-        border-radius: 5px;
-        color: #58a6ff;
-        padding: 0.4rem 0.6rem;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background 0.3s;
+      background: none;
+      border: 1px solid #58a6ff;
+      border-radius: 5px;
+      color: #58a6ff;
+      padding: 0.2rem 0.3rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
     }
 
     #toggle-theme:hover {
-    background: #58a6ff20;
+      background: #58a6ff20;
     }
 
     .subtitle {
-        font-size: 1rem;
-        color: #8b949e;
-        margin: 0;
+      font-size: 1rem;
+      color: #8b949e;
+      margin: 0;
     }
+    /* Tags como categorias */
+  .tag-nav {
+    margin-top: 0.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    background: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+    border: 1px solid #58a6ff40;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    margin: 0 0.5rem 0.5rem 0;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .tag:hover {
+    background: rgba(88, 166, 255, 0.25);
+  }
+
+  /* Redes sociais */
+  .social-link {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-right: 0.5rem;
+  }
+
+  .social-link:hover {
+    text-decoration: underline;
+  }
 
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 2rem 1rem;
-        background: linear-gradient(135deg, #0d1117, #161b22);
-        color: #f0f0f0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #0d1117, #161b22);
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     body.light-theme {
         background: #f5f5f5;
@@ -154,26 +187,31 @@
 <body>
 <header>
   <div class="header-left">
-    <nav>
-      <a href="#clima">Clima</a>
-      <a href="#dados-publicos">Dados Públicos</a>
-      <a href="#ia">IA</a>
-      <a href="#noticias">Notícias</a>
-      <a href="#esportes">Esportes</a>
+    <nav class="tag-nav">
+      <a href="#clima" class="tag">Clima</a>
+      <a href="#dados-publicos" class="tag">Dados Públicos</a>
+      <a href="#ia" class="tag">IA</a>
+      <a href="#noticias" class="tag">Notícias</a>
+      <a href="#esportes" class="tag">Esportes</a>
+      <a href="#" class="tag">Entre Outros</a>
     </nav>
   </div>
 
   <div class="header-right">
-    <a href="https://github.com/seu-usuario/seu-repo" target="_blank" class="github-link">GitHub</a>
+    <a href="https://github.com/Miguel-ectil" target="_blank" class="social-link">🐙 GitHub</a>
+    <a href="https://linkedin.com/in/miguel-ectil" target="_blank" class="social-link">💼 LinkedIn</a>
+    <a href="https://instagram.com/ectil_miguel" target="_blank" class="social-link">📸 Instagram</a>
     <button id="toggle-theme">🌗</button>
   </div>
 </header>
 
-
 <main>
-  <h1>🌐 30 APIs Gratuitas (com Limitações) para Usar em Projetos</h1>
-  <p>Use essas APIs para praticar, testar e criar projetos incríveis! Muitas oferecem planos gratuitos com limitações; confira no site oficial antes de usar.</p>
-
+  <h1>🌐 30 APIs Gratuitas para Seus Projetos</h1>
+  <p>
+    Esta coletânea reúne 30 APIs públicas que você pode usar gratuitamente para aprender, praticar e desenvolver aplicações reais. 
+    Algumas oferecem planos gratuitos com limites de uso, mas são ideais para projetos pessoais, estudos ou prototipagem. 
+    Explore as categorias e comece a construir!
+  </p>
   <div class="api-card">
     <h2>1. OpenStreetMap API</h2>
     <p class="category">🔎 Dados Abertos / Geoespaciais</p>
