@@ -1,5 +1,11 @@
 # 🌐 30 APIs Gratuitas para Usar em Projetos
 
+![GitHub Repo stars](https://img.shields.io/github/stars/Miguel-ectil/30-free-apis-for-projects?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Miguel-ectil/30-free-apis-for-projects?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/Miguel-ectil/30-free-apis-for-projects)
+![License](https://img.shields.io/github/license/Miguel-ectil/30-free-apis-for-projects)
+
+
 Você está buscando APIs públicas e gratuitas para praticar suas habilidades em desenvolvimento web ou mobile? Este repositório reúne **30 APIs grátis**, organizadas por categoria, para te ajudar a criar projetos incríveis!
 
 > ✅ Todas as APIs listadas aqui são gratuitas no momento da última atualização. Algumas podem exigir chave de API (gratuita).
