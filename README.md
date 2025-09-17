@@ -229,4 +229,4 @@ Quer sugerir uma nova API gratuita? Abra um `pull request` ou crie uma `issue`! 
 
 ## 🛡️ Licença
 
-MIT © Miguel Ectil
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
